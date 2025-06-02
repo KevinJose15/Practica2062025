@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,6 +28,14 @@ public class Main {
             char respuesta = scanner.next().charAt(0);
             continuar = (respuesta == 's' || respuesta == 'S');
         }
+           // Mostrar productos registrados
+        System.out.println("\n=== Productos Registrados ===");
+        Iterator<Producto> iterator = productos.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        scanner.close();
 
     }
 }
