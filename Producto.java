@@ -29,4 +29,8 @@ public class Producto {
     public double getPrecio() {
         return precio;
     }
+        @Override
+    public String toString() {
+        return "Producto [ID: " + id + ", Nombre: " + nombre + ", Marca: " + marca + ", Precio: $" + precio + "]";
+    }
 }
